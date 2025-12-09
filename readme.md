@@ -1,11 +1,11 @@
-# EZDIM
+# TorchSugar
 
 ```
 # Is this NCHW? NHWC? Who knows.
 x = x.permute(0, 2, 3, 1)
 ```
 
-Ever broadcasted to the wrong dimension? It is clear that ML libraries need to surface tensor dimensions to the type level, but currently there is no easy way to do so. The ML communituy deserves a good solution, one that doesn't require weird libraries. We need something convenient to use. Ideally, we should be able to hover over variables and see the shape. This will make debugging much easier. 
+It is clear that ML libraries need to surface tensor dimensions to the type level, but currently there is no easy way to do so. The ML communituy deserves a good solution, one that doesn't require weird libraries. We need something convenient to use. Ideally, we should be able to hover over variables and see the shape. This will make debugging much easier. 
 
 PyTorch has named tensors, but almost nobody uses them. they have been labeled as "abandonware" by some PyTorch contributors.
 
