@@ -1,4 +1,4 @@
-# ShapeSugar
+# shapesugar
 
 ```
 # Is this NCHW? NHWC? Who knows.
