@@ -1,4 +1,4 @@
-# TorchSugar
+# ShapeSugar
 
 ```
 # Is this NCHW? NHWC? Who knows.
