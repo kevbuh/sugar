@@ -26,7 +26,11 @@ literally how do ML people survive without lifting tensor dimensions into the ty
 This shouldn't even need dependent types tbh, just a regular static typesystem and marking specific dimensions as dynamic.
 ```
 
-Python [PEP 0646: Variadic Generics](https://peps.python.org/pep-0646/) proposed a solution to this. It is now known as [TypeVarTuple](https://typing.python.org/en/latest/spec/generics.html#typevartuple) with an example shown below:
+```
+I personally believe that one of the biggest downsides of Numpy and all derived libraries (like JAX, PyTorch and TensorFlow) is that there's no way to annotate and check the shapes of operations. This makes some code much less readable than it could be. einsum mitigates this to some extent. - https://eli.thegreenplace.net/2025/understanding-numpys-einsum/
+```
+
+Python [PEP 0646: Variadic Generics](https://peps.python.org/pep-0646/) proposed a solution to this, perhaps we can extend it? It is now known as [TypeVarTuple](https://typing.python.org/en/latest/spec/generics.html#typevartuple) with an example shown below:
 
 ```
 from typing import NewType
